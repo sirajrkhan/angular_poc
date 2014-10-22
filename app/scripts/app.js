@@ -6,7 +6,7 @@
  * @description
  * # angularPocApp
  *
- * Main module of the application.
+ * Main module of the ToDo application.
  */
 angular
   .module('angularPocApp', [
