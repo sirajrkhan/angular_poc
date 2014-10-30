@@ -5,7 +5,7 @@
  * @name angularPocApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the angularPocApp
+ * Controller of the angularPocApp -- the basics
  */
 
 angular.module('angularPocApp',[])
