@@ -13,7 +13,7 @@ angular.module('angularPocApp',[])
     $scope.todos = [
         'To Do Item No. 1',
         'To Do Item No. 2',
-        'To Do Item No. 3'
+        'To Do Item No. 3a'
     ];
         
       $scope.addTodo = function() {
@@ -23,4 +23,3 @@ angular.module('angularPocApp',[])
       };
     
 }]);
-
