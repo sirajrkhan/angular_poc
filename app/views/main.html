@@ -1,13 +1,18 @@
 <div class="container" >
     <h2>My ToDos</h2>
     <form ng-submit="addTodo()" ng-controller="MainCtrl" role="form">
-        <input type="text" ng-model="todo" placeholder="What's next??" class="form-control"> 
-        <span class="input-group-btn"><input type="submit" value="add" class="btn btn-primary"></span> 
-    </form>
+        <div class="row">
+            <div class="input-group">
+                <input type="text" ng-model="todo" placeholder="What's next??" class="form-control"> 
+                <span class="input-group-btn"><input type="submit" value="add" class="btn btn-primary"></span> 
+            </div>
+        </div>
+    
 <hr>
      <p class="form-group" ng-repeat="todo in todos" ng-controller="MainCtrl">
     	<input type="text" ng-model="todo" class="form-control">
     </p>
+    </form>
     
     <hr>
 </div>
