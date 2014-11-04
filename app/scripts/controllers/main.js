@@ -9,17 +9,33 @@
  */
 
 angular.module('angularPocApp',[])
-    .controller('MainCtrl',['$scope', function ($scope){
+.controller('MainCtrl',['$scope', function ($scope){
     $scope.todos = [
-        'To Do Item No. 1',
-        'To Do Item No. 2',
-        'To Do Item No. 3a'
+        'ToDo Item No. 1',
+        'ToDo Item No. 2',
+        'ToDo Item No. 3'
     ];
+    
+//     $scope.formSub = function(index) {
+//         if (index){
+//             console.log('Index is:'+index)
+//             $scope.todos.splice(index, 1);    
+//         } else {
+//             $scope.todos.push($scope.todo);
+//             console.log($scope.todos);
+//             $scope.todo='';    
+//         }
+//     };
         
-      $scope.addTodo = function() {
+    $scope.addTodo = function() {   
         $scope.todos.push($scope.todo);
         console.log($scope.todos);
         $scope.todo='';
-      };
-    
+    };
+
+    $scope.removeTodo = function(index){
+        $scope.todos.splice(index, 1);
+        console.log('Index Selected:' + index + ':::::: Revised Array :'+$scope.todos);
+    };
+
 }]);

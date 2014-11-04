@@ -1,18 +1,20 @@
 <div class="container" >
     <h2>My ToDos</h2>
-    <form ng-submit="addTodo()" ng-controller="MainCtrl" role="form">
+    <form ng-controller="MainCtrl" role="form">
         <div class="row">
             <div class="input-group">
                 <input type="text" ng-model="todo" placeholder="What's next??" class="form-control"> 
-                <span class="input-group-btn"><input type="submit" value="add" class="btn btn-primary"></span> 
+                <span class="input-group-btn"><input type="submit" id="btnAdd" value="add" class="btn btn-primary" ng-click="addTodo()" ></span> 
             </div>
         </div>
-    
-<hr>
-     <p class="form-group" ng-repeat="todo in todos" ng-controller="MainCtrl">
-    	<input type="text" ng-model="todo" class="form-control">
-    </p>
+        <hr>
+        <div ng-repeat="todo in todos track by $index" ng-controller="MainCtrl">
+            <div class="input-group">
+                <input type="text" ng-model="todo" class="form-control">
+                <span class="input-group-btn"><input type="submit" id="btnRemove" value="X" class="btn btn-danger" ng-click="removeTodo($index)" ></span>  
+            </div>        
+        </div>
     </form>
-    
+
     <hr>
 </div>
