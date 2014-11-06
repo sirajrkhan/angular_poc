@@ -11,9 +11,9 @@
 angular.module('angularPocApp',[])
 .controller('MainCtrl',['$scope', function ($scope){
     $scope.todos = [
-        'ToDo Item No. 1',
-        'ToDo Item No. 2',
-        'ToDo Item No. 3'
+        'Responding to new RFPs',
+        'Team - Status Update',
+        'Interviews'
     ];
     
 //     $scope.formSub = function(index) {
