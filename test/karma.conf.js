@@ -2,6 +2,7 @@
 // http://karma-runner.github.io/0.12/config/configuration-file.html
 // Generated on 2014-10-14 using
 // generator-karma 0.8.3
+// Project: Angular POC
 
 module.exports = function(config) {
   'use strict';
